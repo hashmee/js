@@ -23,6 +23,16 @@ $('#formaction').submit(function(event){
   	var result = [];
     var counter = 1
 	  for(i = 1; i <= $units; i++){
+	  	// switch (i) {
+	  	//   case ( i <= 50):
+	  	//     result.push(first_50.push(i * 1.25))
+	  	//     break;	
+	  	//   case ( i > 50 && i <= 100):
+  		//     second_50.push(counter * 1.5)
+    //         counter++
+    //         var concat = first_50.slice(-1).pop() + second_50.slice(-1).pop()
+    //         result.push(concat)
+	  	// }
         if( i >= 1 && i <= 50){
            result.push(first_50.push(i * 1.25))
         }
