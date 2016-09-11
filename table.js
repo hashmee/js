@@ -43,7 +43,7 @@ $('#formaction').submit(function(event){
            result.push(concat)
         }
 	  }
-      alert(result.slice(-1).pop())
+      alert(result.slice(-1).pop());
    }
 
   function commercial(){
