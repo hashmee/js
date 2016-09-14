@@ -1,0 +1,1 @@
+var myArray = [{name: "Muther", address: "Cgutta", branches: 1 },{name:"Hashmi" ,address: "Snagar",branches : 2}]
