@@ -3,17 +3,7 @@ var pdetails =[
 {"name":"Hashmi" ,"address": "Snagar","branches" : "2"}
 ];
 
-$.each( pdetails, function( key, value ) {
-  console.log( "key", key, "value", value );
+$.each(pdetails, function( key, value ) {
+  $('#table1').html('<tr><td>' + pdetails[0].name + '</td>' + '<td>' + pdetails[0].address + '</td>' + '<td>' + pdetails[0].branches + '</td></tr>'  );
 });
 
-$.each( pdetails, function( i, v ) {
-for (i = 0 ; i < pdetails.length; i++ ) {
-$.appendto("#table1"){	
- out += "<tr><td>" +
- pdetails[i].name + "</td><td>" +
- pdetails[i].address + "</td><td>" +
- pdetails[i].branches + "</td></tr>"
- }
-}
- });
