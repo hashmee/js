@@ -15,11 +15,24 @@ $.each(pDetails, function(key, value) {
 
 // business show
 $('.details').click(function() {
+    var dDetails = $('.panel-body')
     var id = $(this).attr('id')
     var persnDetl = pDetails.find(x => x.id == id)
     $('.panel-heading > .panel-title').text('Personal Information')
+    dDetails.html('<b>Name : </b>' + ' ' + persnDetl.name + '<br>' + '<b>Address : </b>' + ' ' + persnDetl.address + '<br>' + '<b>Accounts : </b>' + ' ' + persnDetl.accounts + '<br>' + '<b>Job : </b>' + ' ' + persnDetl.job)
     $('#business-show').toggle();
     $('#business-list').toggle();
 })
 
+$('#member').click(function() {
+    var name = $('#name').val();
+    var address = $('#address').val();
+    var account = $('#account').val();
+    var job = $('#job').val();
+
+    $('#business-form').toggle();
+    $('#business-list').toggle();
+})
+
 $('#business-show').hide();
+$('#business-form').hide();
